@@ -5,7 +5,6 @@ public class Nilai{
 
     public static void main(String[] args){
 
-            boolean running = true;
             float nilaiTugas, nilaiUts, nilaiUas, nilaiAkhir;
             char ulang;
             Scanner nilai = new Scanner(System.in);
