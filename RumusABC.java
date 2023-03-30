@@ -4,6 +4,7 @@ Created by rifqitriginandri on 30/03/23.
 */
 
 import java.util.Scanner;
+
 public class RumusABC{
 
     public static void main(String[] args){
@@ -52,7 +53,10 @@ public class RumusABC{
         }else if(d < 0){
             x1 = ((-b ) / (2 * a)) + (Math.sqrt(d) / (2 * a));
             x2 = ((-b ) / (2 * a)) - (Math.sqrt(d) / (2 * a));
-            cetakHasil(x1, x2);
+            // cetakHasil(x1, x2);
+            System.out.println("X1 = " + x1 + "i");
+            System.out.println("X2 = " + x2 + "i");
+
 
         }else{
             System.out.println("Terjadi kesalahan ");
