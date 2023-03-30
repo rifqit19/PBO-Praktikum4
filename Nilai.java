@@ -1,3 +1,7 @@
+/* 
+Praktikum 4 - Struktur Kendali If
+Created by rifqitriginandri on 30/03/23.
+*/
 
 import java.util.Scanner;
 
@@ -10,7 +14,6 @@ public class Nilai{
             Scanner nilai = new Scanner(System.in);
 
         do{
-
 
             System.out.println("Masukan NIM: ");
             String nim = nilai.next();
