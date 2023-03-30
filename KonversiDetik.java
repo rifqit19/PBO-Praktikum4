@@ -13,6 +13,15 @@ public class KonversiDetik {
             System.out.print("Masukkan jumlah detik: ");
             int detik = input.nextInt();
 
+            konversi(detik);
+
+            System.out.print("Input data lagi [Y/T]? ");
+            pilihan = input.next();
+        }
+        input.close();
+    }
+
+    static void konversi(int detik){
             int hari = detik / 86400;
             detik %= 86400;
 
@@ -22,15 +31,15 @@ public class KonversiDetik {
             int menit = detik / 60;
             detik %= 60;
 
-            System.out.println("Hasil konversi:");
-            System.out.println("Hari: " + hari);
-            System.out.println("Jam: " + jam);
-            System.out.println("Menit: " + menit);
-            System.out.println("Detik: " + detik);
+            cetakHasil(hari, jam, menit, detik);
 
-            System.out.print("Input data lagi [Y/T]? ");
-            pilihan = input.next();
-        }
-        input.close();
+    }
+    static void cetakHasil(int hari, int jam, int menit, int detik){
+        System.out.println("Hasil konversi:");
+        System.out.println("Hari: " + hari);
+        System.out.println("Jam: " + jam);
+        System.out.println("Menit: " + menit);
+        System.out.println("Detik: " + detik);
+
     }
 }
